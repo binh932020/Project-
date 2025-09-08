@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  /* Chỉnh font quy ra 10px */
+  font-size: 62.5%;
+}
+
+body {
+  /* Font của Project */
+  font-family: poppins, sans-serif;
+  /* Size Font */
+  font-size: 1.5rem;
+}
+
+a {
+  /* Xoá gạch chân của link dính*/
+  text-decoration: none;
+}
+
+.btn {
+  text-align: center;
+  display: inline-block;
+  min-width: 118px;
+  line-height: 50px;
+  background-color: #171100;
+  color: #fff;
+  font-size: 1.6rem;
+  padding: 0 16px;
+  border-radius: 24.5px;
+  font-weight: 600;
+  /* margin-top: 1.5rem; */
+}
+
+.main-content {
+  max-width: 1170px;
+  max-width: calc(100% - 48px);
+  margin-left: auto;
+  margin-right: auto;
+}
+.header {
+  background-color: #fffcf4;
+}
+/* .Header để chỉ tác động trên nó và phần con mà ko tác động vào body trùng lặp */
+.header .body {
+  display: flex;
+  align-items: center;
+  padding: 36px 0 8px;
+}
+
+.nav {
+  margin-left: auto;
+}
+
+.nav ul {
+  display: flex;
+  gap: 2rem;
+  /* margin-top: 3rem; */
+}
+
+.nav a {
+  position: relative;
+  color: #5f5b53;
+  font-size: 1.6rem;
+  padding: 8px 21px;
+}
+
+.nav li.Gachchan a,
+nav a:hover {
+  background-color: #17110;
+  font-weight: 600;
+  text-shadow: 1px 0 0 currentColor;
+}
+
+.nav li.Gachchan a::after {
+  position: absolute;
+  left: 21px;
+  bottom: 6px;
+  display: block;
+  content: "";
+  width: 12px;
+  height: 2px;
+  border: 1px;
+  background: #171100;
+}
+
+.header .btn-sign-up {
+  min-width: 144px;
+  margin-left: 32px;
+}
+
+.header .action {
+  margin-left: 49px;
+}
